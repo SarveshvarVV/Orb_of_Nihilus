@@ -13,6 +13,7 @@ public class Asteroid : MonoBehaviour
             collision.GetComponent<Player>().TakeDam(damage);
             Instantiate(hit_effect, transform.position, Quaternion.identity);
             Destroy(gameObject);
+
         }
     }
 }
